@@ -92,7 +92,7 @@ class Button extends React.Component {
           border: disabled ? null : outlined ? `1px solid ${color}` : null
         }}
       >
-        <button className={this.getClasses('input')}>
+        <button className={this.getClasses('input')} style={{ fontSize: style?.fontSize }}>
           {type ? btnChildren : btnChildren || 'button'}
         </button>
       </div>
